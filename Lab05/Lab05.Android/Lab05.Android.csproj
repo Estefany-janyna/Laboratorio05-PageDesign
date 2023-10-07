@@ -84,15 +84,14 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\img02.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Lab05\Lab05.csproj">
       <Project>{6BCB97E2-D589-4020-80E5-F0DD3F163B30}</Project>
       <Name>Lab05</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\logotest2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

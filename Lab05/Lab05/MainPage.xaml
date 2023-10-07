@@ -1,30 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Lab05.MainPage">
+             x:Class="Lab05.MainPage"
+             Title="App Button Taipe Estefany 5C24A">
 
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!-- Estilo para los botones -->
+            <Style x:Key="ButtonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#007ACC" />
+                <!-- Color de fondo -->
+                <Setter Property="TextColor" Value="White" />
+                <!-- Color de texto -->
+                <Setter Property="FontAttributes" Value="Bold" />
+                <!-- Tipo de fuente -->
+                <Setter Property="FontSize" Value="18" />
+                <!-- Tamaño de fuente -->
+                <Setter Property="CornerRadius" Value="10" />
+                <!-- Bordes redondeados -->
+                <Setter Property="Margin" Value="10" />
+                <!-- Margen entre botones -->
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <!-- Prueba con los button, incorporando stilos -->
     <StackLayout>
         <StackLayout>
-            <Button x:Name="Item3" Text="Datepicker"/>
-            <Button x:Name="Item14" Text="ListviewSource"/>
+            <Button x:Name="Item3" Text="Datepicker" Style="{StaticResource ButtonStyle}" />
+            <Button x:Name="Item14" Text="ListviewSource" Style="{StaticResource ButtonStyle}" />
         </StackLayout>
         <StackLayout Orientation="Horizontal">
             <StackLayout>
-                <Button x:Name="Item1" Text="ButtonDemo"/>
-                <Button x:Name="Item2" Text="ButtomCode"/>
-                <Button x:Name="Item4" Text="EditorDemo"/>
-                <Button x:Name="Item5" Text="EditorCode"/>
-                <Button x:Name="Item6" Text="EntryDemo"/>
-                <Button x:Name="Item7" Text="EntryCode"/>
+                <Button x:Name="Item1" Text="ButtonDemo" Style="{StaticResource ButtonStyle}" />
+                <Button x:Name="Item2" Text="ButtomCode" Style="{StaticResource ButtonStyle}" />
+                <Button x:Name="Item4" Text="EditorDemo" Style="{StaticResource ButtonStyle}" />
+                <Button x:Name="Item5" Text="EditorCode" Style="{StaticResource ButtonStyle}" />
+                <Button x:Name="Item6" Text="EntryDemo" Style="{StaticResource ButtonStyle}" />
+                <Button x:Name="Item7" Text="EntryCode" Style="{StaticResource ButtonStyle}" />
             </StackLayout>
             <StackLayout>
-                <Button x:Name="Item8" Text="LabelDemo"/>
-                <Button x:Name="Item9" Text="LabelCode"/>
-                <Button x:Name="Item10" Text="LocalImage"/>
-                <Button x:Name="Item11" Text="EmbeddedImage"/>
+                <Button x:Name="Item8" Text="LabelDemo" Style="{StaticResource ButtonStyle}" />
+                <Button x:Name="Item9" Text="LabelCode" Style="{StaticResource ButtonStyle}" />
+                <Button x:Name="Item10" Text="LocalImage" Style="{StaticResource ButtonStyle}" />
+                <Button x:Name="Item11" Text="EmbeddedImage" Style="{StaticResource ButtonStyle}" />
             </StackLayout>
-
         </StackLayout>
     </StackLayout>
-
 </ContentPage>

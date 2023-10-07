@@ -9,7 +9,7 @@
                 <Label Text="Embedded images!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-                <Image Source="{local12:ImageResource Lab05.prueba.png}" />
+                <Image Source="{local12:ImageResource Lab05.img01.png}" />
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

@@ -16,9 +16,12 @@ namespace Lab05
         {
             InitializeComponent();
             StackLayout stack = new StackLayout();
-            var underlineLabel = new Label { Text = "This is Underlined text.", TextDecorations = TextDecorations.Underline };
-            var strikethroughLabel = new Label { Text = "This is text with strikethrough.", TextDecorations = TextDecorations.Strikethrough };
-            var bothLabel = new Label { Text = "This is Underlined text with strikethrough.", TextDecorations = TextDecorations.Underline | TextDecorations.Strikethrough };
+            var underlineLabel = new Label { Text = "This is Underlined text.",
+                TextDecorations = TextDecorations.Underline };
+            var strikethroughLabel = new Label { Text = "This is text with strikethrough.", 
+                TextDecorations = TextDecorations.Strikethrough };
+            var bothLabel = new Label { Text = "This is Underlined text with strikethrough.", 
+                TextDecorations = TextDecorations.Underline | TextDecorations.Strikethrough };
 
             stack.Children.Add(underlineLabel);
             stack.Children.Add(strikethroughLabel);
